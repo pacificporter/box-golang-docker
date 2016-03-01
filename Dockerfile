@@ -12,6 +12,7 @@ RUN apt-get update \
     && go get github.com/sigma/gocyclo \
     && go get github.com/Masterminds/glide \
     && go get github.com/golang/lint/golint \
+    && go get bitbucket.org/liamstask/goose/cmd/goose \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v4.3.0 \
     && $HOME/.nodebrew/current/bin/nodebrew use v4.3.0 \
