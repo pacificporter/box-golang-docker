@@ -1,4 +1,4 @@
-FROM golang:1.6
+FROM golang:1.5.3
 
 RUN apt-get update \
     && apt-get install -y bzip2 libfreetype6 libfontconfig1 rsync libpng12-0 libicu52 \
@@ -10,7 +10,7 @@ RUN apt-get update \
     && go get golang.org/x/tools/cmd/vet \
     && go get github.com/kisielk/errcheck \
     && go get github.com/sigma/gocyclo \
-    && go get github.com/Masterminds/glide \
+    && go get github.com/tools/godep \
     && go get github.com/golang/lint/golint \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
     && curl -L git.io/nodebrew | perl - setup \
