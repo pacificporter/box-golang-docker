@@ -1,4 +1,4 @@
-FROM golang:1.6.1
+FROM golang:1.6.2
 
 RUN apt-get update \
     && apt-get install -y bzip2 libfreetype6 libfontconfig1 rsync libpng12-0 libicu52 \
