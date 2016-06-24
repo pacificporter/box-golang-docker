@@ -13,8 +13,9 @@ RUN apt-get update \
     && go get github.com/golang/lint/golint \
     && go get github.com/haruyama/golintx/golintx \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
+    && go get honnef.co/go/simple/cmd/gosimple \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v4.3.0 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v4.3.0 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v4.4.6 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v4.4.6 \
     && $HOME/.nodebrew/current/bin/npm install gulp coffeelint -g \
     && rm -rf /tmp/*
