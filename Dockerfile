@@ -1,7 +1,8 @@
 FROM golang:1.7.3
+MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
-    && apt-get install -y bzip2 libfreetype6 libfontconfig1 rsync libpng12-0 libicu52 \
+    && apt-get install -y --no-install-recommends bzip2 libfreetype6 libfontconfig1 rsync libpng12-0 libicu52 \
     && curl http://ftp.jp.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2_amd64.deb -o /tmp/libjpeg8_8d1-2_amd64.deb \
     && dpkg -i /tmp/libjpeg8_8d1-2_amd64.deb \
     && rm /tmp/libjpeg8_8d1-2_amd64.deb \
