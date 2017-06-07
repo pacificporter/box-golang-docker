@@ -21,5 +21,5 @@ RUN apt-get update \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v6.9.2 \
     && $HOME/.nodebrew/current/bin/nodebrew use v6.9.2 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
-    && $HOME/.nodebrew/current/bin/npm install gulp coffeelint eslint eslint-plugin-react -g \
+    && $HOME/.nodebrew/current/bin/npm install gulp coffeelint eslint eslint-plugin-react npm-install-retry -g \
     && rm -rf /tmp/*
