@@ -15,8 +15,8 @@ RUN apt-get update \
     && go get github.com/mdempsky/unconvert \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v6.9.2 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v6.9.2 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v6.11.1 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v6.11.1 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
     && $HOME/.nodebrew/current/bin/npm install gulp coffeelint eslint eslint-plugin-react -g \
     && rm -rf /tmp/*
