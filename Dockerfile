@@ -1,4 +1,4 @@
-FROM golang:1.8.3-stretch
+FROM golang:1.9.1
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -18,5 +18,5 @@ RUN apt-get update \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v6.11.1 \
     && $HOME/.nodebrew/current/bin/nodebrew use v6.11.1 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
-    && $HOME/.nodebrew/current/bin/npm install gulp coffeelint eslint eslint-plugin-react -g \
+    && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
