@@ -1,4 +1,4 @@
-FROM golang:1.8.3-stretch
+FROM golang:1.9.2
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -13,10 +13,11 @@ RUN apt-get update \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
     && go get honnef.co/go/tools/cmd/gosimple \
     && go get github.com/mdempsky/unconvert \
+    && go get github.com/gordonklaus/ineffassign \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v6.11.1 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v6.11.1 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v8.9.0 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v8.9.0 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
-    && $HOME/.nodebrew/current/bin/npm install gulp coffeelint eslint eslint-plugin-react -g \
+    && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
