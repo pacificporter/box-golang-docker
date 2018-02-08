@@ -1,4 +1,4 @@
-FROM golang:1.9.3-stretch
+FROM golang:1.9.4
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
