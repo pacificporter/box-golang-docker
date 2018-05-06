@@ -1,4 +1,4 @@
-FROM golang:1.9.4
+FROM golang:1.10.1
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -16,8 +16,8 @@ RUN apt-get update \
     && go get github.com/gordonklaus/ineffassign \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v8.9.0 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v8.9.0 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v8.11.1 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v8.11.1 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
     && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
