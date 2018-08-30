@@ -1,4 +1,4 @@
-FROM golang:1.10.3
+FROM golang:1.10.4
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
