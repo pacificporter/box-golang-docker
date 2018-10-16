@@ -8,7 +8,7 @@ RUN apt-get update \
     && go get github.com/kisielk/errcheck \
     && go get github.com/sigma/gocyclo \
     && go get github.com/Masterminds/glide \
-    && go get github.com/golang/lint/golint \
+    && go get golang.org/x/lint/golint \
     && go get github.com/haruyama/golintx/golintx \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
     && go get honnef.co/go/tools/cmd/gosimple \
