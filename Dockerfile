@@ -16,8 +16,8 @@ RUN apt-get update \
     && go get github.com/gordonklaus/ineffassign \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v8.11.1 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v8.11.1 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v10.13.0 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v10.13.0 \
     && export PATH=$PATH:$HOME/.nodebrew/current/bin \
     && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
