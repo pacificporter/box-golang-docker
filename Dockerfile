@@ -18,6 +18,4 @@ RUN apt-get update \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v10.13.0 \
     && $HOME/.nodebrew/current/bin/nodebrew use v10.13.0 \
-    && export PATH=$PATH:$HOME/.nodebrew/current/bin \
-    && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
