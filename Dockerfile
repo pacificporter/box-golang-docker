@@ -1,4 +1,4 @@
-FROM golang:1.11.2
+FROM golang:1.11.4
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -18,6 +18,4 @@ RUN apt-get update \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v10.13.0 \
     && $HOME/.nodebrew/current/bin/nodebrew use v10.13.0 \
-    && export PATH=$PATH:$HOME/.nodebrew/current/bin \
-    && $HOME/.nodebrew/current/bin/npm install gulp -g \
     && rm -rf /tmp/*
