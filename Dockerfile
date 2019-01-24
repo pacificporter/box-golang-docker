@@ -12,6 +12,7 @@ RUN apt-get update \
     && go get github.com/haruyama/golintx/golintx \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
     && go get honnef.co/go/tools/cmd/gosimple \
+    && go get honnef.co/go/tools/cmd/staticcheck \
     && go get github.com/mdempsky/unconvert \
     && go get github.com/gordonklaus/ineffassign \
     && go get github.com/rubenv/sql-migrate/... \
