@@ -1,4 +1,4 @@
-FROM golang:1.11.5
+FROM golang:1.12.1
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -16,6 +16,7 @@ RUN apt-get update \
     && go get github.com/mdempsky/unconvert \
     && go get github.com/gordonklaus/ineffassign \
     && go get github.com/rubenv/sql-migrate/... \
+    && go get github.com/gostaticanalysis/nilerr/cmd/nilerr \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v10.13.0 \
     && $HOME/.nodebrew/current/bin/nodebrew use v10.13.0 \
