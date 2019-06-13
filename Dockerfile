@@ -1,4 +1,4 @@
-FROM golang:1.12.5
+FROM golang:1.12.6
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -11,7 +11,6 @@ RUN apt-get update \
     && go get golang.org/x/lint/golint \
     && go get github.com/haruyama/golintx/golintx \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
-    && go get honnef.co/go/tools/cmd/gosimple \
     && go get honnef.co/go/tools/cmd/staticcheck \
     && go get github.com/mdempsky/unconvert \
     && go get github.com/gordonklaus/ineffassign \
