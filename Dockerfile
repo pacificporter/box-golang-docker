@@ -1,4 +1,4 @@
-FROM golang:1.13.1
+FROM golang:1.13.3
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 RUN apt-get update \
@@ -7,7 +7,6 @@ RUN apt-get update \
     && rm -rf /var/cache/apt/archives/* \
     && go get github.com/kisielk/errcheck \
     && go get github.com/sigma/gocyclo \
-    && go get github.com/Masterminds/glide \
     && go get golang.org/x/lint/golint \
     && go get github.com/haruyama/golintx/golintx \
     && go get bitbucket.org/liamstask/goose/cmd/goose \
