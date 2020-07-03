@@ -1,0 +1,21 @@
+name: Update README
+
+on: pull_request
+
+jobs:
+  update_readme:
+    name: Update README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Update README
+        run: make update_readme
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update README
+          ref: ${{ github.head_ref }}
