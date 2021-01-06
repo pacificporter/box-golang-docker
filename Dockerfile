@@ -9,6 +9,6 @@ RUN apt-get update \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.30.0 \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v12.16.3 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v12.16.3 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.15.4 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v14.15.4 \
     && rm -rf /tmp/*
