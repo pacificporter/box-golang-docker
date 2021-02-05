@@ -5,7 +5,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends chromium rsync \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
-    && go get bitbucket.org/liamstask/goose/cmd/goose \
+    && go get github.com/pressly/goose/cmd/goose \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.30.0 \
     && curl -L git.io/nodebrew | perl - setup \
