@@ -6,12 +6,4 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   reviewers:
-  - ichiban
-  - deltam
-  - Unspeakable
-  - tchssk
-  - ikawaha
-  - hfunai
-  - tekiomo
-  - CortYuming
-  - zenwerk
+  - pacificporter/developers
