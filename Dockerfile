@@ -10,9 +10,9 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
     && apt-get install -y --no-install-recommends chromium rsync gh \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
-    && go get github.com/github-release/github-release \
-    && go get github.com/pressly/goose/cmd/goose \
-    && go get github.com/rubenv/sql-migrate/... \
+    && go install github.com/github-release/github-release@latest \
+    && go install github.com/pressly/goose/cmd/goose@latest \
+    && go install github.com/rubenv/sql-migrate/...@latest \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.15.4 \
     && $HOME/.nodebrew/current/bin/nodebrew use v14.15.4 \
