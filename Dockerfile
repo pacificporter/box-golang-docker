@@ -1,4 +1,4 @@
-FROM golang:1.17.7
+FROM golang:1.17.8
 MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 
 # `debconf: delaying package configuration, since apt-utils is not installed` を抑止する
