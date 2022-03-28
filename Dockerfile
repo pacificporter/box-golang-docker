@@ -9,7 +9,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
     && go get github.com/github-release/github-release \
-    && go get github.com/pressly/goose/cmd/goose \
+    && go get github.com/pressly/goose/v3/cmd/goose \
     && go get github.com/rubenv/sql-migrate/... \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.15.4 \
