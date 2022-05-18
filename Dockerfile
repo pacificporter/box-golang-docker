@@ -14,6 +14,6 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
     && go install github.com/pressly/goose/cmd/goose@latest \
     && go install github.com/rubenv/sql-migrate/...@latest \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.19.2 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v14.19.2 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.19.3 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v14.19.3 \
     && rm -rf /tmp/*
