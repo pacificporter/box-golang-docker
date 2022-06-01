@@ -5,7 +5,7 @@ MAINTAINER HARUYAMA Seigo <haruyama@pacificporter.jp>
 ENV DEBCONF_NOWARNINGS yes
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends chromium rsync unzip \
+    && apt-get install -y --no-install-recommends chromium rsync unzip patch \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
     && go get github.com/github-release/github-release \
