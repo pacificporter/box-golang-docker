@@ -3,11 +3,11 @@
 ## build
 
 ```
-docker build -t pacificporter/golang:1.18.3-14.19.3 .
+docker build -t pacificporter/golang:1.18.3-14.20.0 .
 ```
 
 ## push
 
 ```
-docker push pacificporter/golang:1.18.3-14.19.3
+docker push pacificporter/golang:1.18.3-14.20.0
 ```

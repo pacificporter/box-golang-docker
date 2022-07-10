@@ -14,8 +14,8 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
     && go install github.com/pressly/goose/v3/cmd/goose@latest \
     && go install github.com/rubenv/sql-migrate/...@latest \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.19.3 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v14.19.3 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.20.0 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v14.20.0 \
     && rm -rf /tmp/* \
     && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
