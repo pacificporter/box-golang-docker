@@ -7,3 +7,9 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - pacificporter/developers
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: daily
+  reviewers:
+    - pacificporter/developers
