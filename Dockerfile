@@ -1,4 +1,4 @@
-FROM golang:1.18.6
+FROM golang:1.19.1
 
 # `debconf: delaying package configuration, since apt-utils is not installed` を抑止する
 ENV DEBCONF_NOWARNINGS yes
