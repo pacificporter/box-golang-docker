@@ -2,6 +2,9 @@ name: Update README
 
 on: pull_request
 
+permissions:
+  contents: write
+
 jobs:
   update_readme:
     name: Update README
