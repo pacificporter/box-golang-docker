@@ -7,7 +7,6 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends chromium rsync unzip patch jq \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
-    && go install github.com/github-release/github-release@latest \
     && go install github.com/pressly/goose/v3/cmd/goose@latest \
     && go install github.com/mackee/git-credential-github-apps@latest \
     && curl -L git.io/nodebrew | perl - setup \
