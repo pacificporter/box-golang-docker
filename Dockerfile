@@ -12,6 +12,7 @@ RUN apt-get update \
     && go install github.com/github-release/github-release@latest \
     && go install github.com/pressly/goose/v3/cmd/goose@latest \
     && go install github.com/rubenv/sql-migrate/...@latest \
+    && go install github.com/mackee/git-credential-github-apps@latest \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.21.2 \
     && $HOME/.nodebrew/current/bin/nodebrew use v14.21.2 \
