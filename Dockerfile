@@ -7,11 +7,8 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends chromium rsync unzip patch jq \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
-    && curl -fsSL https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_amd64.deb | dd of=/tmp/gh_2.14.7_linux_amd64.deb \
-    && dpkg -i /tmp/gh_2.14.7_linux_amd64.deb \
-    && go install github.com/github-release/github-release@latest \
     && go install github.com/pressly/goose/v3/cmd/goose@latest \
-    && go install github.com/rubenv/sql-migrate/...@latest \
+    && go install github.com/mackee/git-credential-github-apps@latest \
     && curl -L git.io/nodebrew | perl - setup \
     && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.21.2 \
     && $HOME/.nodebrew/current/bin/nodebrew use v14.21.2 \
