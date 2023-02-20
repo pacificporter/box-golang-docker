@@ -10,8 +10,8 @@ RUN apt-get update \
     && go install github.com/pressly/goose/v3/cmd/goose@latest \
     && go install github.com/mackee/git-credential-github-apps@latest \
     && curl -L git.io/nodebrew | perl - setup \
-    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.21.2 \
-    && $HOME/.nodebrew/current/bin/nodebrew use v14.21.2 \
+    && $HOME/.nodebrew/current/bin/nodebrew install-binary v14.21.3 \
+    && $HOME/.nodebrew/current/bin/nodebrew use v14.21.3 \
     && rm -rf /tmp/* \
     && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
     && unzip awscliv2.zip \
