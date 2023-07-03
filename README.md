@@ -1,4 +1,4 @@
-# Dockerfile for golang and nodejs tests in wercker
+# Dockerfile for test and build
 
 ## build
 
