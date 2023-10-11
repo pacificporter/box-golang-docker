@@ -3,11 +3,11 @@
 ## build
 
 ```
-docker build --platform linux/amd64 -t pacificporter/golang:1.21.1-bullseye-18.18.0 .
+docker build --platform linux/amd64 -t pacificporter/golang:1.21.3-bullseye-18.18.0 .
 ```
 
 ## push
 
 ```
-docker push pacificporter/golang:1.21.1-bullseye-18.18.0
+docker push pacificporter/golang:1.21.3-bullseye-18.18.0
 ```
