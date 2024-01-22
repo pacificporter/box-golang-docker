@@ -4,8 +4,9 @@ else
   SEDICMD=sed -i
 endif
 
-GOVERSION=$(shell grep FROM Dockerfile | cut -f 2 -d ':')
+GOVERSION=$(shell grep 'FROM golang' Dockerfile | cut -f 2 -d ':')
+NODEVERSION=$(shell grep 'FROM node' Dockerfile | cut -f 2 -d ':' | cut -f 1 -d ' ')
 
 .PHONY: update_readme
 update_readme:
-	${SEDICMD} "s/golang:[^-]\+-[^-]\+-/golang:${GOVERSION}-/" README.md
+	${SEDICMD} "s,pacificporter/[^ ]\+,pacificporter/golang:${GOVERSION}-${NODEVERSION}," README.md
