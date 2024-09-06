@@ -1,4 +1,4 @@
-FROM golang:1.22.6-bullseye
+FROM golang:1.22.7-bullseye
 
 # `debconf: delaying package configuration, since apt-utils is not installed` を抑止する
 ENV DEBCONF_NOWARNINGS yes
